@@ -1,0 +1,131 @@
+/* navigation */
+nav {
+  width: 100%;
+  background-color: #c5dfef; /* Light grey background */
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+/* Flex container for top nav (logo + menu) */
+#boxf {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 5px 5px;
+  width: 40%;
+}
+
+/* Three lines icon */
+#box4 img {
+  width: 35px;
+  cursor: pointer;
+}
+#box4:hover{
+background: linear-gradient(to right, rgb(186, 200, 205), rgb(104, 153, 166), rgb(35, 120, 154));
+}
+
+/* Navigation Menu */
+#box5 ul {
+  display: flex;
+  gap: 7px; /* spacing between li items */
+  list-style: none;
+}
+
+#box5 li a {
+  text-decoration: none;
+  color: #000000;
+  padding: 8px 15px;
+  transition: background 0.3s;
+}
+
+
+#box5 li a:hover {
+  background:linear-gradient(to right, rgb(9, 110, 204), rgb(25, 108, 186), rgb(28, 128, 181));
+  border-radius: 3px;
+}
+
+/* Scrolling marquee */
+#boxg {
+ background: linear-gradient(to right, hsl(196, 90%, 68%), rgb(40, 169, 244), rgb(1, 133, 234));
+  padding: 5px 20px;
+  font-weight: bold;
+  color: #ffffff;
+  width: 60%;
+}
+
+#box6 marquee {
+  font-size: 16px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    nav{
+        display: block;
+    }
+  #box5 ul {
+    /* flex-direction: column; */
+    /* display: none; hidden by default on small screen */
+    background-color: #f2f2f2;
+    /* position: absolute; */
+    /* top: 60px;
+    right: 20px;
+    width: 150px;
+    padding: 10px; */
+    /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
+    gap: 1px;
+  }
+
+  #box5 ul.show {
+    display: flex;
+  }
+
+  #box4 {
+    display: block;
+    
+  }
+  #boxf{
+    display: flex;
+  }
+  #boxg{
+    width: 100%;
+  }
+  #box5 ul{
+    display: flex;
+  }
+}
+/* nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+    background: linear-gradient(to right, hsl(61, 36%, 34%), rgba(184, 197, 43, 0.641), rgb(180, 183, 19));
+    color: hsl(201, 81%, 90%);
+}
+
+#boxf {
+    display: flex;
+    align-items: center;
+    background-color: rgb(225, 18, 18);
+    flex: 0 0 45%;
+    gap: 10px;
+}
+
+#threelines {
+    height: 2rem;
+}
+
+#box5 ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+    padding-left: 10px;
+    list-style-type: none;
+    justify-content: center;
+   
+}
+#box5 ul li a{
+    text-decoration: none;  
+} */
+

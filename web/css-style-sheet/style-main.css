@@ -1,0 +1,102 @@
+main {
+    display: flex;
+    width: 100%;
+}
+
+#boxh {
+    height: 410px;
+    background-color: rgb(85, 84, 102);
+    width: 40%;
+}
+
+#boxi {
+    height: 410px;
+
+    background: linear-gradient(to right, hsl(196, 90%, 68%), rgb(40, 169, 244), rgb(1, 133, 234));
+    flex-grow: 4;
+    justify-content: center;
+}
+
+.family-photo {
+    height: 300px;
+}
+
+#box7 section {
+    display: flex;
+    justify-content: center;
+}
+
+#box8 section {
+    display: block;
+    justify-items: center;
+}
+
+#box6 aside {
+    width: 100%;
+    height: 100%;
+}
+
+#box6a {
+    color: black;
+    height: 300px;
+    background:linear-gradient(135deg,
+            #fff4c2,
+            /* light gold shine */
+            #f9d976,
+            /* soft gold */
+            #f7c948,
+            /* bright gold */
+            #f0b429,
+            /* true gold */
+            #d9a441,
+            /* rich gold */
+            #b8860b);
+            /* deep gold base */
+
+    }
+
+    #box6b {
+        background-color: #c5dfef;
+        height: 110px;
+
+    }
+
+    #box6b p {
+        color: black;
+    }
+
+    #box11 {
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+
+    @media (max-width: 768px) {
+        main {
+            display: block;
+        }
+
+        #boxh {
+            height: 196px;
+            width: 100%;
+        }
+
+        #box6 aside {
+            height: 196px;
+            display: flex;
+        }
+
+        #box6a {
+            height: 196px;
+            width: 200px;
+        }
+
+        #box6b {
+
+            height: inherit;
+            width: 239px;
+        }
+    }
